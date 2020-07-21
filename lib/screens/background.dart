@@ -14,19 +14,19 @@ class BackgroundScreen extends StatelessWidget {
             onHorizontalDragEnd: (DragEndDetails dragEndDetails) {
               if (dragEndDetails.primaryVelocity >= 1000 ||
                   dragEndDetails.primaryVelocity <= -1000) {
-                print(colorProvider.generatedColor);
+                print(colorProvider.backgroundColor);
                 colorProvider.generateColor();
               }
             },
             child: Container(
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: colorProvider.generatedColor,
+                color: colorProvider.backgroundColor,
               ),
               child: Center(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.pink,
+                    color: colorProvider.circleColor,
                     shape: BoxShape.circle,
                   ),
                 ),
