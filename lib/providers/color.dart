@@ -2,8 +2,8 @@ import 'dart:math';
 import 'package:flutter/widgets.dart';
 
 class ColorProvider extends ChangeNotifier {
-  Color backgroundColor;
-  Color circleColor;
+  Color backgroundColor; //Add a default color,background is white
+  Color circleColor; //Add a default color,circle is white
 
   void generateColor() {
     Random random = Random();
